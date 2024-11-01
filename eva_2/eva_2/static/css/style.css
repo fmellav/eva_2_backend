@@ -1,0 +1,298 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/*---------- INICIO MENU DE NAVEGACIÓN ----------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.logo img {
+    width: 100px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff; 
+}
+
+/*---------- FIN MENU DE NAVEGACIÓN ----------*/
+/*---------- INICIO SECCION BANNER ----------*/
+
+.sect_banner{
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_banner{
+    filter: blur(5px);
+}
+
+.img_text{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+}
+
+.img_text h2{
+    font-size: 40px;
+    -webkit-text-stroke: 1px #333;
+}
+
+.img_text p{
+    font-size: 30px;
+    -webkit-text-stroke: 1px #333;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;  
+}
+/*---------- FIN SECCION BANNER ----------*/
+/*---------- INICIO PROPIEDADES PARA SERVICIOS ----------*/
+
+.Sectio_titu_serv{
+
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+  
+.Titulo_servicio{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}  
+
+.servicios {
+    display: flex;
+    justify-content: center;
+}
+
+.servicios_text{
+    position: absolute;
+    padding-left: 70px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.img_serv {
+    width: 350px;
+    height: 250px;
+    margin-right: 80px;
+  }
+
+/*---------- FIN PROPIEDADES PARA SERVICIOS ----------*/
+/*---------- INICIO BREVE DESCRIPCIÓN / VIDEO / BALANCE ---------- */
+
+.descripcion{
+    display: grid;
+    position: relative;
+    background-color: rgba(0, 4, 255, 0.589);
+    margin-top: 40px;
+}
+
+.video-fondo{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px); 
+    z-index: -1;
+}
+
+.desc_text{
+    width: 900px;
+    padding-left: 280px;
+}
+.descripcion p {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.btn_2 {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    transform: translateY(-50%);
+    background-color: #f0852d;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.btn_2:hover {
+    background-color: #ffffff;
+    color: black;  
+}
+
+.balance{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #f0852d;
+    text-align: center;
+}
+
+.balance h3{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+
+}
+
+.balance p{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    
+}
+
+.bal_text{
+    width: 200px;
+    padding: 80px;
+}
+
+/*---------- FIN BREVE DESCRIPCIÓN / VIDEO / BALANCE ---------- */
+/*---------- INICIO FORMULARIO / CONTACTO / MAPA ---------- */
+
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;  
+}
+
+.contact_info {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.contact_info h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold
+}
+
+.contact_info p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.form_container {
+    background-color: #585656;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: 150px;
+}
+
+.form_container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    margin-bottom: 5px;
+}
+
+input, .text_area {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.text_area {
+    padding: 8px;
+    width: 96%;
+    height: 150px; 
+    resize: none; 
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+.btn_form {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_form:hover {
+    background-color: #ccc;
+}
+
+/*---------- FIN FORMULARIO / CONTACTO / MAPA ---------- */
+
